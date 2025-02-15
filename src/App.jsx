@@ -55,6 +55,7 @@ function App() {
             <input
               type="checkbox"
               name={index}
+              checked={task.isChecked}
               onChange={() => handleCheckbox(index)}
             ></input>
           </li>

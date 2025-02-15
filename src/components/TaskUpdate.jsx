@@ -47,12 +47,12 @@ function TaskUpdate(state, action) {
         }),
       };
     case "delete":
-        const tempTasks = [...state.tasks]; 
-        tempTasks.splice(action.payload, 1);
-        return {
-          ...state,
-          tasks: tempTasks
-        };
+      const tempTasks = [...state.tasks];
+      tempTasks.splice(action.payload, 1);
+      return {
+        ...state,
+        tasks: tempTasks
+      };
     case "toggle-task":
       return {
         ...state,
